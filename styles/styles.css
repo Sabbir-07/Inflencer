@@ -67,7 +67,7 @@ body {
 
 /* icon section */
 .icon-container {
-    width: 1110px;
+    width: 1200px;
     padding: 30px;
 
     margin: 100px auto;
@@ -76,8 +76,8 @@ body {
 .icon-style {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    justify-content:space-evenly;
+    
 }
 
 /* popular collection */
@@ -168,6 +168,9 @@ body {
 /* media qury responsive
  */
  @media screen and (max-width:576px) {
+    body{
+        margin: 5px;
+    }
     .banner-item{
         flex-direction: column-reverse;
     }
@@ -179,6 +182,12 @@ body {
     }
     .popular-item{
         grid-template-columns: repeat(1,1fr);
+    }
+    .icon-style, .future-item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
     }
     
  }
